@@ -1,0 +1,15 @@
+c2fa5d8d1c5a39590db31ddb91a1d0de *COPYRIGHT
+9f654a8923e3b592667494ba3a4c43a9 *DESCRIPTION
+f4426c2058c863608fb0a096e52abf6e *INDEX
+751b1dcf4932dd5ab0389a484f57bc34 *R/noverlap.R
+6c57b0b2b7c3f6554499071d987ee6fd *R/zzz.R
+798b4b6317cf4b159ff9e93f6a9fec5b *data/Banknotes.r
+4024b6a3cb4c1fb4296d0b3195c457a7 *data/Z1.r
+0a396a081c6ae15c0ee27a77e9e4da74 *data/Z2.R
+e97f19dd8ef1f15d173ed87e6dc8e7ee *man/Banknotes.Rd
+286662905fac0bd9384c51bdd5b5be0a *man/Z1.Rd
+b68d5efae4bcab565f9f7edc865d4744 *man/Z2.Rd
+a8f179baf5ec8f2cd1b07c269559a1bf *man/noverlap.Rd
+a333a3cc47fc910982e3096192f91342 *man/noverlap1.Rd
+4e77230296b1d5c86cda8b03a50b81af *src/NoverlapS.f
+19f0b05dcc16dea59565633be6c4bc98 *src/noverlap_res.rc

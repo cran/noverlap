@@ -1,7 +1,7 @@
 #  noverlap.r
 #  ----------
 #  Peter J. Rousseeuw, Andreas Christmann
-#  Version         March, 2003
+#  Version         MAY/2004
 #  Microsoft Windows XP
 #  !!! NO WARRANTY !!!
 #  This program computes an approximation of n_overlap
@@ -49,14 +49,15 @@ noverlap1.for <- function(Z,NDIR=10000) {
     as.integer(NQUASI),
     as.integer(JLV), as.integer(JRV), as.double(ETAS),
     as.integer(Y), as.integer(M), as.integer(YS), as.integer(MS), 
-    as.integer(Index), as.integer(FF), as.integer(S)
+    as.integer(Index), as.integer(FF), as.integer(S),
+    PACKAGE="noverlap"
    )} 
 
 noverlap.for <- function(Z,NDIR=10000,PLOT=FALSE) {
     if (nrow(Z) > 10000) {
-	stop(message="ERROR: Number of cases > 10,000")}
+    stop(message="ERROR: Number of cases > 10,000")}
     if ( nrow(Z) < ncol(Z)-1) {
-	stop(message="ERROR: Number of cases < Number of explanatory variables")}
+    stop(message="ERROR: Number of cases < Number of explanatory variables")}
     tmptmp1 <- noverlap1.for(Z,NDIR)
     NP <- ncol(Z)-1
     eta <- Z[,1:NP] %*% as.matrix(tmptmp1[[20]])
@@ -71,7 +72,7 @@ noverlap.for <- function(Z,NDIR=10000,PLOT=FALSE) {
     dimnames(tmptmp3) <- list(NULL, c("id", "y", "xu'"))
     print(tmptmp1[[22]])
     return(tmptmp2 <- list(NOVERLAP=tmptmp1[[22]],COEFFICIENTS=tmptmp1[[20]],
-	                 NSIN=tmptmp1[[21]],DETAILS=tmptmp3))}
+                     NSIN=tmptmp1[[21]],DETAILS=tmptmp3))}
 
 
 ### EXAMPLES
