@@ -1,0 +1,4 @@
+noverlap        Compute the quantity n_overlap for binary regression models.
+                If n_overlap=0 then the data set has complete or quasicomplete separation, and
+                the maximum likelihood estimate in logistic regression
+                models and probit regression models do not exist.

@@ -1,0 +1,7 @@
+Banknotes               Swiss banknotes data set
+Z1                      Data set to illustrate the use of noverlap.for
+Z2                      Data set to illustrate the use of noverlap.for
+noverlap.for            Minimal number of overlap based on an affine
+                        hyperplane in binary regression (complete or
+                        quasicomplete separation)
+noverlap1.for           Function called by noverlap.for
